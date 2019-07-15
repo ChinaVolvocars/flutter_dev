@@ -132,6 +132,12 @@ class test extends State<StatefullGroupPage> {
                         ],
                       ),
                     ),
+                    Text('你好啊 '),
+                    Text(
+                      '一个文本text',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 18, color: Colors.red),
+                    )
                   ],
                 ),
                 onRefresh: mRefresh),
