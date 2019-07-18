@@ -1,6 +1,7 @@
 import 'dart:ui' as prefix0;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_dev/app/LoginPage.dart';
 import 'package:flutter_dev/layout/ContainerLayoutWidgets.dart';
 import 'package:flutter_dev/layout/GesturePage.dart';
 
@@ -32,23 +33,21 @@ class SecondRoute extends StatelessWidget {
             ),
             RaisedButton(
               child: Text('手势'),
-              onPressed: (){
-                Navigator.push(
-                  context
-                  , MaterialPageRoute(builder: (context)=>GesturePage()))
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => GesturePage()));
+              },
+            ),
+            RaisedButton(
+              child: Text('登陆'),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LoginPage()));
               },
             )
           ],
         ),
       ),
-      // body: Center(
-      //   child: RaisedButton(
-      //     onPressed: () {
-      //       Navigator.pop(context);
-      //     },
-      //     child: Text('返回上一个页面'),
-      //   ),
-      // ),
     );
   }
 }

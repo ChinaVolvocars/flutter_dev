@@ -8,8 +8,10 @@ class ContainerLayoutWidgets extends StatelessWidget {
         title: Text('Container 布局的使用'),
       ),
       body: Container(
+        
         color: Colors.blue,
         height: 260,
+        width: 360,
         padding: EdgeInsets.fromLTRB(15, 15, 30, 50),
         alignment: Alignment.bottomCenter,
         child: Text('布局',
@@ -17,7 +19,7 @@ class ContainerLayoutWidgets extends StatelessWidget {
                 color: Colors.white,
                 backgroundColor: Colors.deepOrange,
                 fontSize: 25)),
-        transform: Matrix4.rotationY(0.8),
+        // transform: Matrix4.rotationY(0.8),
       ),
     );
   }
