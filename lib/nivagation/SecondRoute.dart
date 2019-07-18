@@ -2,6 +2,7 @@ import 'dart:ui' as prefix0;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_dev/layout/ContainerLayoutWidgets.dart';
+import 'package:flutter_dev/layout/GesturePage.dart';
 
 class SecondRoute extends StatelessWidget {
   @override
@@ -21,7 +22,7 @@ class SecondRoute extends StatelessWidget {
             Text('文本2'),
             Text('文本3'),
             RaisedButton(
-              child: Text('打开下一个页面'),
+              child: Text('ContainerLayoutWidgets'),
               onPressed: () {
                 Navigator.push(
                     context,
@@ -29,6 +30,14 @@ class SecondRoute extends StatelessWidget {
                         builder: (context) => ContainerLayoutWidgets()));
               },
             ),
+            RaisedButton(
+              child: Text('手势'),
+              onPressed: (){
+                Navigator.push(
+                  context
+                  , MaterialPageRoute(builder: (context)=>GesturePage()))
+              },
+            )
           ],
         ),
       ),
